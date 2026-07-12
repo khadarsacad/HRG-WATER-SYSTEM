@@ -112,7 +112,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <div class="flex-1 min-h-0 flex flex-col">
             <!-- SIDEBAR HEADER / BRAND -->
             <div class="px-5 py-4 shrink-0 flex items-center justify-between">
-                <h1 class="text-sm font-extrabold text-white tracking-wide">Water <span class="text-cyan-400">System</span></h1>
+                <h1 class="text-sm font-extrabold text-white tracking-wide">Hargeisa Water <span class="text-cyan-400">System</span></h1>
                 <button onclick="toggleTheme()" id="themeToggleBtn" title="Beddel Light/Dark Mode" class="w-8 h-8 shrink-0 flex items-center justify-center rounded-lg bg-slate-700/40 hover:bg-slate-700 text-amber-300 transition-all">
                     <i class="fa-solid fa-sun" id="themeIcon"></i>
                 </button>

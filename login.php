@@ -211,8 +211,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action_verify_gmail_ot
                 <div class="w-16 h-16 bg-cyan-500 text-white flex items-center justify-center text-3xl rounded-2xl mx-auto shadow-lg shadow-cyan-500/20 mb-3">
                     <i class="fa-solid fa-droplet"></i>
                 </div>
-                <h1 class="text-2xl font-bold text-white tracking-wide">Water System</h1>
-                <p class="text-gray-400 text-sm mt-1">Please sign in to access your portal</p>
+                <h1 class="text-2xl font-bold text-white tracking-wide">HRG WATER SYSTEM</h1>
+             
             </div>
 
             <?php if (!empty($error)): ?>
@@ -226,10 +226,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action_verify_gmail_ot
                 <div>
                     <label class="block text-gray-300 text-sm font-medium mb-1.5">User Role</label>
                     <select name="role" required class="w-full px-4 py-2.5 bg-slate-700/50 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-cyan-500 transition">
-                        <option value="" disabled selected>Select your role...</option>
+                        <option value="" disabled selected>SELECT YOUR ROLE</option>
                         <option value="Admin">Admin</option>
                         <option value="Manager">Manager</option>
                         <option value="Cashier">Cashier</option>
+                        <option value="Staff">Staff</option>
                     </select>
                 </div>
                 <div>
@@ -237,15 +238,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action_verify_gmail_ot
                     <input type="text" name="username" required placeholder="Enter username" class="w-full px-4 py-2.5 bg-slate-700/50 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-cyan-500 transition">
                 </div>
                 <div>
-                    <div class="flex justify-between items-center mb-1.5">
-                        <label class="text-gray-300 text-sm font-medium">Password</label>
-                        <button type="button" onclick="showReset()" class="text-xs text-cyan-400 hover:underline focus:outline-none">Forgot Password?</button>
-                    </div>
+                    <label class="block text-gray-300 text-sm font-medium mb-1.5">Password</label>
                     <div class="relative">
-                        <input type="password" id="passwordField" name="password" required placeholder="••••••••" class="w-full pl-4 pr-10 py-2.5 bg-slate-700/50 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-cyan-500 transition">
+                        <input type="password" id="passwordField" name="password" required placeholder="Enter Password" class="w-full pl-4 pr-10 py-2.5 bg-slate-700/50 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-cyan-500 transition">
                         <button type="button" onclick="togglePassword()" class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-white">
                             <i class="fa-solid fa-eye" id="eyeIcon"></i>
                         </button>
+                    </div>
+                    <div class="text-right mt-1.5">
+                        <button type="button" onclick="showReset()" class="text-xs text-cyan-400 hover:underline focus:outline-none">Forgot Password?</button>
                     </div>
                 </div>
                 <button type="submit" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium py-2.5 rounded-xl transition shadow-lg shadow-cyan-500/25">
